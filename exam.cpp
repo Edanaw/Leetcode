@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// 读取文件夹下所有文件的路径
 vector<string> getFileList(string dir)
 {
     DIR *pathname = opendir(dir.c_str());
