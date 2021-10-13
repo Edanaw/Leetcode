@@ -1,8 +1,19 @@
+/*
+ * @Author: your name
+ * @Date: 2020-12-12 22:08:13
+ * @LastEditTime: 2021-04-29 21:43:21
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \project\Leetcode\bigNumber.c
+ */
 #ifndef __BIGNUMBER__H__
 #define __BIGNUMBER__H__
 
 #include <stdio.h>
 #include <string.h>
+
+char *stdin_get_str(char *str);
+void BigNumberMul(char a[], char b[]);
 
 #define U_MAX 220
 #define ADD_MAX 240
@@ -12,6 +23,8 @@ char a[U_MAX], b[U_MAX];
 int c[U_MAX], d[U_MAX];
 int result[MUL_MAX];
 
+char *stdin_get_str(char *str);
+void BigNumberMul(char a[], char b[]);
 /*
     fgets() 不能直接使用代替gets() , 因为他会把 '/n' 也接收了，
     所以需要重新封装一下，当fgtes接收的字符串的结束是 '/n' 将其改为
